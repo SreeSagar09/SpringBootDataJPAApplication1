@@ -18,10 +18,10 @@ Notes:
 Output:
 From run method in TestRunner class.
 Hibernate: select employee0_.employee_id as employee1_0_, employee0_.age as age2_0_, employee0_.designation as designat3_0_, employee0_.employee_code as employee4_0_, employee0_.employee_name as employee5_0_ from employee employee0_
-Employee [employeeId=1, employeeCode=A001, employeeName=Sree Sagar, age=30, designation=Software Engineer]
-Employee [employeeId=2, employeeCode=A002, employeeName=Sathish, age=27, designation=Software Engineer]
-Employee [employeeId=3, employeeCode=A003, employeeName=Pavan, age=26, designation=QA Engineer]
-Employee [employeeId=4, employeeCode=A004, employeeName=Aravind, age=28, designation=QA Engineer]
-Employee [employeeId=5, employeeCode=A005, employeeName=Pavan, age=27, designation=QA Engineer]
-Employee [employeeId=6, employeeCode=A006, employeeName=Rakesh, age=27, designation=Software Engineer]
+1 --> Sree Sagar[A001]
+2 --> Sathish[A002]
+3 --> Pavan[A003]
+4 --> Aravind[A004]
+5 --> Pavan[A005]
+6 --> Rakesh[A006]
 From main method in SpringBootDataJPAApplication1Application class.

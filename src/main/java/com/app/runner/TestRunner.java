@@ -22,7 +22,7 @@ public class TestRunner implements ApplicationRunner{
 		List<Employee> employeeList = employeeRepository.findAll();
 		
 		employeeList.forEach(e->{
-			System.out.println(e);
+			System.out.println(e.getEmployeeId()+" --> "+e.getEmployeeName()+"["+e.getEmployeeCode()+"]");
 		});
 	}
 
