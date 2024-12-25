@@ -1,0 +1,27 @@
+A Program to show how to configure the Spring Data JPA in Spring Boot Application:
+Programs:
+* SpringBootDataJPAApplication1Application.java
+* Employee.java
+* EmployeeRepository.java
+* TestRunner.java
+Notes:
+* In this Spring Boot application we can configure the data base by using properties file.
+* The 'spring.datasource.url' property is used to configure the Database url.
+* The 'spring.datasource.username' property is used to configure the Database login users name.
+* The 'spring.datasource.password' property is used to configure the Database login password.
+* The 'spring.datasource.driver-class-name' property is used to configure the fully qualified name of the JDBC driver.
+* The spring.datasource.driver-class-name property is Auto-detected based on the URL by default.
+* The 'spring.jpa.database-platform' property is used to configure the name of the dialect of Database.
+* The spring.jpa.database-platform property auto-detected by default.
+* The 'spring.jpa.show-sql' property is used to configure enable and disable the sql statements logging.
+* The 'spring.jpa.hibernate.ddl-auto' property is used to configure the DDL mode.
+Output:
+From run method in TestRunner class.
+Hibernate: select employee0_.employee_id as employee1_0_, employee0_.age as age2_0_, employee0_.designation as designat3_0_, employee0_.employee_code as employee4_0_, employee0_.employee_name as employee5_0_ from employee employee0_
+Employee [employeeId=1, employeeCode=A001, employeeName=Sree Sagar, age=30, designation=Software Engineer]
+Employee [employeeId=2, employeeCode=A002, employeeName=Sathish, age=27, designation=Software Engineer]
+Employee [employeeId=3, employeeCode=A003, employeeName=Pavan, age=26, designation=QA Engineer]
+Employee [employeeId=4, employeeCode=A004, employeeName=Aravind, age=28, designation=QA Engineer]
+Employee [employeeId=5, employeeCode=A005, employeeName=Pavan, age=27, designation=QA Engineer]
+Employee [employeeId=6, employeeCode=A006, employeeName=Rakesh, age=27, designation=Software Engineer]
+From main method in SpringBootDataJPAApplication1Application class.
